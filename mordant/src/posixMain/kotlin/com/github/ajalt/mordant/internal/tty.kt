@@ -1,7 +1,6 @@
 package com.github.ajalt.mordant.internal
 
-import com.github.ajalt.mordant.internal.syscalls.SyscallHandlerNativePosix
-import kotlinx.cinterop.UnsafeNumber
+import com.github.ajalt.mordant.terminal.`interface`.SyscallHandlerNativePosix
 import platform.posix.ECHO
 
 // https://www.gnu.org/software/libc/manual/html_node/getpass.html

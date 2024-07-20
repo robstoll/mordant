@@ -1,6 +1,6 @@
 package com.github.ajalt.mordant.internal
 
-import com.github.ajalt.mordant.internal.syscalls.SyscallHandler
-import com.github.ajalt.mordant.internal.syscalls.SyscallHandlerNativePosix
+import com.github.ajalt.mordant.terminal.TerminalInterface
+import com.github.ajalt.mordant.terminal.`interface`.SyscallHandlerNativePosix
 
-internal actual fun getSyscallHandler(): SyscallHandler = SyscallHandlerNativePosix
+internal actual fun getStandardTerminalInterface(): TerminalInterface = SyscallHandlerNativePosix
